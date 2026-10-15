@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventa Soft | Apps para tu negocio</title>
+<meta name="description" content="Aplicaciones de inventario, ventas y tickets para negocios pequeños. Soluciones a tu medida.">
+<style>
+  :root {
+    --bg: #f6f8fb; --card: #ffffff; --text: #14202e; --muted: #5b6b7d;
+    --brand: #1769e0; --brand-dark: #0f4fb0; --accent: #12b886; --line: #e1e7ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1620; --card: #16222f; --text: #eaf0f7; --muted: #9db0c4; --line: #243445; --brand: #4c95ff; --brand-dark: #2f7be8; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 18px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; }
+  .logo span { color: var(--brand); }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; background: var(--brand); color: #fff; text-decoration: none; font-weight: 600; }
+  .btn:hover { background: var(--brand-dark); }
+  .btn.wa { background: #1fa855; }
+  .btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
+  .hero { padding: 48px 0 40px; text-align: center; }
+  .hero h1 { font-size: clamp(1.9rem, 6vw, 3rem); line-height: 1.12; letter-spacing: -.03em; max-width: 720px; margin: 0 auto 16px; }
+  .hero p { color: var(--muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 26px; }
+  .hero .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  section { padding: 40px 0; }
+  h2 { font-size: 1.6rem; letter-spacing: -.02em; margin-bottom: 8px; }
+  .sub { color: var(--muted); margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: .96rem; }
+  .tag { display: inline-block; font-size: .75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .product { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 760px) { .product { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+  .product ul { padding-left: 20px; color: var(--muted); }
+  .product li { margin: 4px 0; }
+  .shot { background: linear-gradient(135deg, var(--brand), var(--accent)); border-radius: 18px; min-height: 240px; display: grid; place-items: center; color: #fff; font-weight: 700; text-align: center; padding: 20px; }
+  .cta { text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 36px 20px; }
+  .cta p { color: var(--muted); margin: 8px 0 20px; }
+  footer { padding: 28px 0 40px; text-align: center; color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--brand); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Inventa<span> Soft</span></div>
+    <a class="btn wa" href="https://wa.me/50582515769?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20aplicaciones">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Controla tu inventario y tus ventas desde el celular</h1>
+      <p>Aplicaciones prácticas para negocios pequeños: inventario, ventas, tickets y reportes de ganancias, a tu medida.</p>
+      <div class="actions">
+        <a class="btn wa" href="https://wa.me/50582515769?text=Hola%2C%20quiero%20una%20demostraci%C3%B3n">Pedir una demostración</a>
+        <a class="btn ghost" href="#apps">Ver aplicaciones</a>
+      </div>
+    </div>
+
+    <section id="apps">
+      <h2>Nuestras aplicaciones</h2>
+      <p class="sub">Hechas para el día a día de tu negocio.</p>
+      <div class="card product">
+        <div>
+          <div class="tag">Aplicación estrella</div>
+          <h3 style="font-size:1.3rem;margin-bottom:8px">INV_VENTA</h3>
+          <p style="margin-bottom:12px">Tu inventario y tus ventas en un solo lugar, funcionando en tu teléfono Android.</p>
+          <ul>
+            <li>Registro de productos, existencias y precios</li>
+            <li>Ventas rápidas con ticket impreso</li>
+            <li>Reporte de ganancias con margen en C$ y %</li>
+            <li>Exporta a Excel y comparte por WhatsApp</li>
+            <li>Opcional: panel web para ver tu negocio desde la computadora</li>
+          </ul>
+        </div>
+        <div class="shot">Aquí van las capturas de la app</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>¿Por qué elegirnos?</h2>
+      <p class="sub">Soluciones simples, con acompañamiento real.</p>
+      <div class="grid">
+        <div class="card"><h3>Fácil de usar</h3><p>Pensadas para que cualquier persona las aprenda en minutos.</p></div>
+        <div class="card"><h3>A tu medida</h3><p>Adaptamos la aplicación a cómo trabaja tu negocio.</p></div>
+        <div class="card"><h3>Soporte cercano</h3><p>Te atendemos por WhatsApp cuando lo necesites.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta">
+        <h2>¿Hablamos de tu negocio?</h2>
+        <p>Escríbenos y te mostramos cómo puede ayudarte.</p>
+        <a class="btn wa" href="https://wa.me/50582515769?text=Hola%2C%20quiero%20informaci%C3%B3n">Escribir por WhatsApp</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Inventa Soft · <a href="#">Facebook</a>
+  </div>
+</footer>
+
+</body>
+</html>
