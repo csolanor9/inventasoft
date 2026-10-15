@@ -40,7 +40,14 @@
   @media (min-width: 760px) { .product { grid-template-columns: 1.2fr 1fr; align-items: center; } }
   .product ul { padding-left: 20px; color: var(--muted); }
   .product li { margin: 4px 0; }
-  .shot { background: linear-gradient(135deg, var(--brand), var(--accent)); border-radius: 18px; min-height: 240px; display: grid; place-items: center; color: #fff; font-weight: 700; text-align: center; padding: 20px; }
+  .product { grid-template-columns: 1fr !important; }
+  .phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 8px; }
+  .phones figure, .desk figure { margin: 0; }
+  .phones img { width: 100%; max-width: 280px; display: block; margin: 0 auto; border-radius: 22px; border: 6px solid #1c2530; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+  .desk { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 8px; }
+  .desk img { width: 100%; display: block; border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+  figcaption { text-align: center; color: var(--muted); font-size: .88rem; margin-top: 8px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 24px; padding-left: 20px; color: var(--muted); margin: 12px 0 20px; }
   .cta { text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 36px 20px; }
   .cta p { color: var(--muted); margin: 8px 0 20px; }
   footer { padding: 28px 0 40px; text-align: center; color: var(--muted); font-size: .9rem; }
@@ -80,10 +87,36 @@
             <li>Ventas rápidas con ticket impreso</li>
             <li>Reporte de ganancias con margen en C$ y %</li>
             <li>Exporta a Excel y comparte por WhatsApp</li>
-            <li>Opcional: panel web para ver tu negocio desde la computadora</li>
+            <li>Se complementa con InventaWeb, el panel para la computadora</li>
           </ul>
         </div>
-        <div class="shot">Aquí van las capturas de la app</div>
+        <div class="phones">
+          <figure><img src="app-inicio.png" alt="Pantalla de inicio de INV_VENTA con resumen del día, alertas de stock y caja" loading="lazy"><figcaption>Resumen del día y alertas de stock</figcaption></figure>
+          <figure><img src="app-modulos.png" alt="Módulos de INV_VENTA: productos, categorías, clientes, proveedores y más" loading="lazy"><figcaption>Todos los módulos a un toque</figcaption></figure>
+          <figure><img src="app-productos.png" alt="Catálogo de productos con precios y aviso de stock bajo" loading="lazy"><figcaption>Catálogo con aviso de stock bajo</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="inventaweb">
+      <h2>InventaWeb: el panel web</h2>
+      <p class="sub">Administra tu negocio desde la computadora, con los mismos datos que tu celular.</p>
+      <div class="card">
+        <ul class="features">
+          <li>Productos con foto y código de barras</li>
+          <li>Ventas con carrito, descuentos y ticket</li>
+          <li>Entradas, proveedores y clientes</li>
+          <li>Cuentas por cobrar</li>
+          <li>Reportes con gráficos y Excel</li>
+          <li>Roles: administrador y vendedor</li>
+          <li>Módulo opcional para talleres de motos: proformas, órdenes y citas</li>
+        </ul>
+        <div class="desk">
+          <figure><a href="web-panel.png" target="_blank" rel="noopener"><img src="web-panel.png" alt="Panel principal de InventaWeb" loading="lazy"></a><figcaption>Panel principal</figcaption></figure>
+          <figure><a href="web-productos.png" target="_blank" rel="noopener"><img src="web-productos.png" alt="Catálogo de productos en InventaWeb" loading="lazy"></a><figcaption>Catálogo de productos</figcaption></figure>
+          <figure><a href="web-venta.png" target="_blank" rel="noopener"><img src="web-venta.png" alt="Pantalla de nueva venta con carrito en InventaWeb" loading="lazy"></a><figcaption>Nueva venta con carrito</figcaption></figure>
+          <figure><a href="web-reportes.png" target="_blank" rel="noopener"><img src="web-reportes.png" alt="Reportes de ventas con gráficos en InventaWeb" loading="lazy"></a><figcaption>Reportes con gráficos</figcaption></figure>
+        </div>
       </div>
     </section>
 
